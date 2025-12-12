@@ -5,8 +5,151 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
  <link rel="stylesheet" href="main.css">
+ 
+ <link href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+   <style>
+   body {
+  background-color: #ededed ;
+}
+
+/* ABOUT SECTION */
+.about {
+  width: 100%;
+  background-color: #ededed;
+  padding: 50px 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  /* gap: 2rem; */
+}
+
+/* IMAGE */
+.about-img img {
+  width: 80%;
+  max-width: 450px;
+  border-radius: 10px;
+  transition: all 1s ease;
+  margin-bottom: 100px;
+}
+
+.about-img img:hover {
+  transform: scale(1.05);
+  border-radius: 20%;
+}
+
+/* CONTENT */
+.about-content {
+  width: 100%;
+}
+
+.about-content h1 {
+  font-size: 60px;
+  text-align: center;
+}
+
+.about-content p {
+  font-size: 18px;
+  line-height: 28px;
+}
+
+/* BUTTON */
+.btn {
+  display: block;
+  width: fit-content;
+  margin: 20px auto;
+  padding: 16px 30px;
+  background: black;
+  color: white;
+  font-size: 15px;
+  border-radius: 30px;
+  transition: all .45s ease;
+}
+
+.btn:hover {
+  letter-spacing: 2px;
+  background: white;
+  color: black;
+}
+
+/* =======================
+      MOBILE RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+  .about {
+    grid-template-columns: 1fr;
+    text-align: center;
+    /* padding: 40px 20px; */
+    position: relative;
+    bottom: 250px;
+  }
+
+  .about-img img {
+    max-width: 300px;
+    height: 350px;
+    margin: auto;
+    position: relative;
+    top: 50px;
+
+
+  }
+  
+  .about-content h1 {
+    font-size: 40px;
+  }
+
+  .about-content p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .about-img img {
+    max-width: 250px;
+  }
+
+  .about-content h1 {
+    font-size: 32px;
+  }
+
+  .about-content p {
+    font-size: 15px;
+    line-height: 22px;
+    
+  }
+}
+
+   </style>
 </head>
 <body>
+
+  <div>
+    <header class="sticky">
+      <a href="#" class="logo"><img src="img/logo.png" alt="" /></a>
+
+      <ul class="navbar">
+        <li><a href="index.html" class="active">HOME</a></li>
+        <li><a href="about.html">ABOUT US</a></li>
+         <li><a href="welcome.html">INTRODUCTION</a></li>
+        <li><a href="collection.html">READY TO WEAR</a></li>
+        <li><a href="business.html">BUSINESS PROFILE</a></li>
+        <li><a href="#">SERVICES</a></li>
+        <li><a href="contacy.html">CONTACT US</a></li>
+        <li> <a href="#"><i class="ri-shopping-cart-2-line"></i></a></li>
+      </ul>
+      <div class="menu-btn">
+        <i class="ri-menu-line"></i>
+      </div>
+    </header>
+
+  </div>
     <!-- About us -->
  <section class="about">
   <div class="about-img">
@@ -18,6 +161,41 @@
       <a href="#" class="btn"> Know more about us</a>
     </div>
  </section>
+  <footer class="footer">
+  <div class="footer-container">
+
+    <div class="footer-col">
+      <h4>About Us</h4>
+      <p>We provide the best quality products at affordable prices.</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="collection.html">Collection</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="index.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Follow Us</h4>
+      <div class="social-links">
+        <a href="#">Facebook</a>
+        <a href="#">Instagram</a>
+        <a href="#">Twitter</a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 Your Website. All rights reserved.</p>
+  </div>
+</footer>
+
+ <script src="script.js"></script>
 </body>
 
 </html>
