@@ -118,7 +118,7 @@ header {
 
 .home {
   min-height: 70vh;
-  /* padding: 120px 8% 60px; */
+  padding: 50px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
@@ -697,6 +697,7 @@ font-size: 80px;
     font-size: 24px;
   }
 }
+
 
 
 
