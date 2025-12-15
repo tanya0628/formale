@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <style>
+      body{
+             background: #111;
+        }
+   .welcome {
+  background-image: url('img/bg.jpg'); /* change your image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  height: 70vh;
+  /* padding: 120px 50px; */
+
+  display: flex;
+  justify-content: center; /* center horizontally */
+  align-items: center;     /* center vertically */
+  /* color: #fff; */
+  position: relative;
+  text-align: center;      /* center text */
+}
+
+.welcome-text {
+  position: relative;
+  max-width: 700px;
+  z-index: 1;
+    transition: all 0.45s ease;
+}
+
+/* Heading Styles */
+.welcome-text h1 {
+  font-size: 60px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  transition: all 0.50s ease;
+}
+
+.welcome-text h4 {
+  font-size: 26px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+/* Paragraph */
+.welcome-text p {
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 30px;
+  transition: 0.3s ease;
+}
+
+/* Button */
+.welcome-text .btn {
+  display: inline-block;
+  padding: 12px 28px;
+  background:black;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.welcome-text .btn:hover {
+  background: rgb(189, 188, 188);
+  color: black;
+}
+    
+@media (max-width:768px) 
+{
+ .welcome-text h1{
+  font-size: 20px;
+  margin-top: 50px;
+ } 
+ .navbar{
+  margin-top: 50px;
+ }
+}
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+</head>
+<body>
+     <!-- navbar -->
+  <div>
+    <header class="sticky">
+      <a href="#" class="logo"><img src="img/logo.png" alt="" /></a>
+
+      <ul class="navbar">
+        <li><a href="index.html" class="active">HOME</a></li>
+        <li><a href="about.html">ABOUT US</a></li>
+         <li><a href="welcome.html">INTRODUCTION</a></li>
+        <li><a href="collection.html">READY TO WEAR</a></li>
+        <li><a href="business.html">BUSINESS PROFILE</a></li>
+        <li><a href="hello.html">SERVICES</a></li>
+        <li><a href="contacy.html">CONTACT US</a></li>
+        <li> <a href="#"><i class="ri-shopping-cart-2-line"></i></a></li>
+      </ul>
+      <div class="menu-btn">
+        <i class="ri-menu-line"></i>
+      </div>
+    </header>
+
+  </div>
+  
+
+  <!-- welcome section -->
+    <section class="welcome">
+      <div class="welcome-text">
+         <h1>Welcome</h1>
+        <h4>To Our Company</h4>
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt tenetur provident magni velit inventore tempora corporis esse maxime qui, a tempore! Consectetur illo amet mollitia porro consequuntur ab ipsa sint?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id reprehenderit aliquam voluptas, illum ea consequatur ullam fuga minima hic harum eveniet consequuntur nostrum asperiores debitis nobis eos maxime eaque doloribus!</p>
+        <a href="#" class="btn"> Explore now</a>
+      </div>
+    </section>
+
+
+    <footer class="footer">
+  <div class="footer-container">
+
+    <div class="footer-col">
+      <h4>About Us</h4>
+      <p>We provide the best quality products at affordable prices.</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="collection.html">Collection</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="index.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Follow Us</h4>
+      <div class="social-links">
+        <a href="#">Facebook</a>
+        <a href="#">Instagram</a>
+        <a href="#">Twitter</a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 Your Website. All rights reserved.</p>
+  </div>
+</footer>
+    <script src="script.js"></script>
+</body>
+</html>
